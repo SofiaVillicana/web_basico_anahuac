@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galerías.</title>
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="ejercicio4.css">
+</head>
+<body>
+    <div id="container">
+        <section class="galeria1">
+        <figure>
+            <a href="images/ballet.jpg" data-lightbox="portafolio1" data-tittle="Hello!">
+            <img src="images/ballet_2.jpg" alt="Hello!">
+        </a>
+
+        </figure>
+        </section>  
+        <section class="galería2">
+                <div class="gallery">
+                        <input checked="" id="ind-1" name="gallery" type="radio">
+                          <label for='ind-1'></label>
+                        </input>
+                        <input id="ind-2" name="gallery" type="radio">
+                          <label for="ind-2"></label>
+                        </input>
+                        <input id="ind-3" name="gallery" type="radio">
+                          <label for="ind-3"></label>
+                        </input>
+                        <ul class="gallery-images">
+                          <li class="gallery-item">
+                            <label for="ind-1">
+                              <img src="images/ballet.jpg">
+                            </label>
+                          </li>
+                          <li class="gallery-item">
+                            <label for="ind-2">
+                              <img style="background-color:pink;" src="images/love.png">
+                            </label>
+                          </li>
+                          <li class="gallery-item">
+                            <label for="ind-3">
+                              <img src="images/Sunflower_from_Silesia2.jpg">
+                            </label>
+                          </li>
+                        </ul>
+                      </div>             
+
+        </section>  
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+</html>
