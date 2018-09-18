@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 7, flexbox</title>
+    <style>
+        html {
+  box-sizing: border-box;
+    }
+*, *:before, *:after {
+  box-sizing: inherit;
+    }
+
+    body{
+        color: blueviolet;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    p{
+        padding: 1em;
+    }
+        #container {
+            width: 600px;
+            height: 300px;
+            background-color: lavenderblush;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .caja {
+            width: auto;
+            height: 120px;
+        }
+        .box1 {
+            background-color: #FFC8C1;
+            height: 80px;
+        }
+        .box2 {
+            background-color: #E8B0D9;
+            height: 120px;
+        }
+        .box3 {
+            background-color: #E8CEFF;
+            height: 80px;
+        }
+        .box4 {
+            background-color: #B0B5E8;
+            height: 120px;
+        }
+        .box5 {
+            background-color: #CAEEFF;
+            height: 80px;
+        }
+
+         #container2 {
+            width: 100vw;
+            height: 600px;
+            background-color: #FFC2C9;
+
+            display: flex;
+            flex-wrap: wrap;
+           /* align-content: center;*/
+        }
+
+
+        .caja-a{
+          flex-grow: 1;
+        }
+
+        .box6 {
+            background-color: #CEEFE8;
+        }
+        .box7 {
+            background-color: #EED2E1;
+        }
+        .box8 {
+            background-color: #B2E2F6;
+        }
+        .box9 {
+            background-color: #FFF7D6;
+        }
+        .box10 {
+            background-color: #FADDF9;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <section class="caja box1"> <p> Caja 1 </p> </section>
+        <section class="caja box2"> <p> Caja 2 </p> </section>
+        <section class="caja box3"> <p> Caja 3 </p></section>
+        <section class="caja box4"> <p> Caja 4 </p></section>
+        <section class="caja box5"> <p> Caja 5 </p></section>
+    </div>
+
+    <div id="container2">
+            <section class="caja-a box6"> <p> PUFF! </p> </section>
+            <section class="caja-a box7"> <p> Anything you can do! </p> </section>
+            <section class="caja-a box8"> <p> Hello World! </p></section>
+            <section class="caja-a box9"> <p> Color! </p></section>
+            <section class="caja-a box10"> <p> Starbucks </p></section>
+        </div>
+</body>
+</html>
